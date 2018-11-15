@@ -5,7 +5,14 @@ def turn_count(board)
     if ele == "X" || ele == "O"
       count += 1
     end
-
+  end
+  return count
 end
 
-
+def current_player(board)
+  if turn_count(board) % 2 == 0
+    "x"
+  else
+    "O"
+  end
+end
